@@ -24,6 +24,7 @@ p {
     font-size: 1.2em;
     margin: 20px 0;
     max-width: 500px;
+    padding: 0 20px;
 }
 
 .card {
@@ -67,6 +68,7 @@ footer {
   .container {
     width: 100%;
     max-width: none;
+    position:relative
   }
 }
 
@@ -121,3 +123,59 @@ main {
     transform: scale(1);
   }
 }
+
+img {
+  vertical-align: middle;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.slide {
+  display: none;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.slideshow-container {
+  width: 90%;          
+  max-width: 350px;    
+  margin: 20px auto;
+}
+ video {
+  width: 20%;
+  height: auto;
+  border-radius: 10px;
+ }
